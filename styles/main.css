@@ -1,0 +1,125 @@
+/* Default values and style settings */
+header, footer{
+    height: 15px;
+    background-color: darkslategray;
+}
+h1{
+    height: 5px;
+    margin-top: 10px;
+    background-color: gray;
+}
+
+/* Flex grid functionality configurations */
+body {
+    display: grid;
+}
+nav ul, #image-flex{
+    display: flex;
+    flex-direction: row;
+    list-style-type: circle;
+    font-size: 85%;
+}
+img{
+    width: 100%;
+}
+
+/* Cushioning */
+nav ul li{
+    margin: 5px 10px;
+    font-size: 110%;
+}
+
+/* Navbar styling for current-page distinction */
+li.current{
+    list-style-type: disc;
+}
+a.current{
+    color: brown;
+    font-weight: bold;
+}
+
+/* Navbar item and interaction configurations */
+nav ul li a{
+    color: orangered;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: orange;
+}
+nav ul li a:active{
+    color: red;
+}
+
+/* Breakpoint for smaller screens not accounted for, ranges from 0-510px wide*/
+@media screen and (max-width: 510px){
+    nav ul, #image-flex{
+        flex-direction: column;
+    }
+}
+
+/* 
+**
+Screens from 511px-575px use default configuration settings 
+**
+*/
+
+/* Breakpoint for landscape phones and small tablets */
+@media screen and (min-width: 576px) and (max-width: 767px){
+    nav ul li{
+        margin: 5px 10px;
+        font-size: 110%;
+    }
+}
+
+/* Breakpoint for regular tablets and other medium sized screens */
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    nav ul li{
+        margin: 5px 15px;
+        font-size: 125%;
+    }
+    header, footer{
+    background-color: slategray;
+    height: 60px;
+    }
+    h1{
+        background-color: darkgray;
+        margin-top: 40px;
+        height: 20px;
+    }
+
+}
+
+/* Breakpoint for larger devices such as desktops */
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+    nav ul li{
+        margin: 5px 20px;
+        font-size: 145%;
+    }
+    header, footer{
+    background-color: slategray;
+    height: 60px;
+    }
+    h1{
+        background-color: darkgray;
+        margin-top: 40px;
+        height: 20px;
+    }
+}
+
+/* Breakpoint for smaller TV screens and up */
+@media screen and (min-width: 1400px){
+    nav ul li{
+        margin: 5px 30px;
+        font-size: 165%;
+    }
+    header, footer{
+    background-color: slategray;
+    height: 60px;
+    }
+    h1{
+        background-color: darkgray;
+        margin-top: 40px;
+        height: 20px;
+    }
+
+}
